@@ -1,0 +1,160 @@
+$primaryBlue: hsl(215, 51%, 70%);
+$primaryCyan: hsl(178, 100%, 50%);
+$alphaCyan: hsla(178, 100%, 50%, 0.5);
+$mainBackground: hsl(217, 54%, 11%);
+$cardBackground: hsl(216, 50%, 16%);
+$horizontalRule: hsl(215, 32%, 27%);
+$white: hsl(0, 0%, 100%);
+
+body {
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+    font-size: 18px;
+    color: $white;
+    background-color: $mainBackground;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: $cardBackground;
+    width: 307px;
+    margin: 1.25em;
+    padding: 1.25em;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.2);
+
+    .imageContainer {
+        position: relative;
+        width: 100%;
+
+        .nftImage {
+            display: block;
+            object-fit: cover;
+            max-width: 100%;
+            max-height: 100%;
+            border-radius: 7.5px;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .3s ease;
+            background-color: $alphaCyan;
+            border-radius: 7.5px;
+
+            .eyeImage {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                text-align: center;
+            }
+        }
+    }
+
+    .imageContainer:hover .overlay {
+        opacity: 1;
+    }
+
+
+
+    h1 {
+        font-weight: 600;
+        font-size: 24px;
+        margin: 1em 0 0.75em;
+    }
+
+    h1:hover {
+        color: $primaryCyan
+    }
+
+    p {
+        font-size: 18px;
+        font-weight: 300;
+        color: $primaryBlue;
+    }
+
+    p.desc {
+        margin: 1em 0;
+        line-height: 1.5em;
+
+    }
+
+    .spaceBetween {
+        display: flex;
+        justify-content: space-between;
+        font-size: 18px;
+        color: $primaryBlue;
+
+        img {
+            vertical-align: bottom;
+        }
+
+        .eth {
+            color: hsl(178, 100%, 50%);
+            font-weight: 600;
+        }
+
+        .timer {
+            font-weight: 400;
+        }
+    }
+
+    hr {
+        height: 1px;
+        border: none;
+        background-color: $horizontalRule;
+        margin: 1em 0;
+    }
+
+    footer {
+        display: flex;
+        align-items: center;
+
+        .profilePicture {
+            border: 1px solid $white;
+            border-radius: 50%;
+            width: 1.75em;
+            height: 1.75em;
+        }
+
+        p {
+            font-size: 16px;
+            margin-left: 1em;
+        }
+
+        #name {
+            color: $white;
+        }
+
+        #name:hover {
+            color: $primaryCyan
+        }
+    }
+}
+
+.attribution {
+    color: $primaryBlue;
+    position: fixed;
+    bottom: 0;
+    font-size: 11px;
+    text-align: center;
+    a {
+        color: white;
+        text-decoration: none;
+    }
+    a:hover {
+        color: $primaryCyan;
+    }    
+}
+

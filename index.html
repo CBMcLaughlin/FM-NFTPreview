@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- displays site properly based on user's device -->
+
+        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+        <title>Frontend Mentor | NFT preview card component</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400;600&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="styles/cssReset/css_reset.css" />
+        <link rel="stylesheet" href="styles/styles.css" />
+    </head>
+    <body>
+        <main class="card">
+            <div class="imageContainer">
+                <img class="nftImage" src="images/image-equilibrium.jpg" alt="An image of a cube" />
+                <div class="overlay">
+                  <img class="eyeImage" src="images/icon-view.svg" alt="A eye icon" />
+                </div>
+            </div>
+            <section>
+                <h1>Equilibrium #3429</h1>
+                <p class="desc">Our Equilibrium collection promotes balance and calm.</p>
+                <div class="spaceBetween">
+                    <div>
+                        <img src="images/icon-ethereum.svg" alt="The ethereum logo" />
+                        <span class="eth">0.041 ETH</span>
+                    </div>
+                    <div>
+                        <img src="images/icon-clock.svg" alt="A clock icon" />
+                        <span class="timer">3 days left</span>
+                    </div>
+                </div>
+                <hr />
+                <footer>
+                    <img
+                        src="images/image-avatar.png"
+                        alt="Image of Jules Wyvern"
+                        class="profilePicture"
+                    />
+                    <p>Creation of <span id="name">Jules Wyvern</span></p>
+                </footer>
+            </section>
+        </main>
+
+        <footer class="attribution">
+            Challenge by
+            <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a
+            >. Coded by <a href="#">Connor McLaughlin</a>.
+        </footer>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>

@@ -1,0 +1,170 @@
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+  color: white;
+  background-color: #0d192b;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card {
+  background-color: #14253d;
+  width: 307px;
+  margin: 1.25em;
+  padding: 1.25em;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.2);
+}
+
+.card .imageContainer {
+  position: relative;
+  width: 100%;
+}
+
+.card .imageContainer .nftImage {
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 7.5px;
+}
+
+.card .imageContainer .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  background-color: rgba(0, 255, 247, 0.5);
+  border-radius: 7.5px;
+}
+
+.card .imageContainer .overlay .eyeImage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.card .imageContainer:hover .overlay {
+  opacity: 1;
+}
+
+.card h1 {
+  font-weight: 600;
+  font-size: 24px;
+  margin: 1em 0 0.75em;
+}
+
+.card h1:hover {
+  color: #00fff7;
+}
+
+.card p {
+  font-size: 18px;
+  font-weight: 300;
+  color: #8bacda;
+}
+
+.card p.desc {
+  margin: 1em 0;
+  line-height: 1.5em;
+}
+
+.card .spaceBetween {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 18px;
+  color: #8bacda;
+}
+
+.card .spaceBetween img {
+  vertical-align: bottom;
+}
+
+.card .spaceBetween .eth {
+  color: #00fff7;
+  font-weight: 600;
+}
+
+.card .spaceBetween .timer {
+  font-weight: 400;
+}
+
+.card hr {
+  height: 1px;
+  border: none;
+  background-color: #2f415b;
+  margin: 1em 0;
+}
+
+.card footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card footer .profilePicture {
+  border: 1px solid white;
+  border-radius: 50%;
+  width: 1.75em;
+  height: 1.75em;
+}
+
+.card footer p {
+  font-size: 16px;
+  margin-left: 1em;
+}
+
+.card footer #name {
+  color: white;
+}
+
+.card footer #name:hover {
+  color: #00fff7;
+}
+
+.attribution {
+  color: #8bacda;
+  position: fixed;
+  bottom: 0;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: white;
+  text-decoration: none;
+}
+
+.attribution a:hover {
+  color: #00fff7;
+}
+/*# sourceMappingURL=styles.css.map */
